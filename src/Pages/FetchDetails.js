@@ -54,6 +54,8 @@ const FetchDetails = () => {
             <p className="text-green-500 font-bold text-lg">Rs. 70.0/Lt</p>
         </div>
         </div>
+
+
         </div>
         </form>
       </div>
