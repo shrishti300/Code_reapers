@@ -19,7 +19,7 @@ const DashBoard = ()=>{
 </div>
        </div>
        <div className="flex flex-justify justify-center">
-        <p className="font-bold p-4"> Service we offer</p>
+        <p className="font-bold p-4"> Services we offer</p>
        </div>
        <div className="flex flex-row justify-center gap-8">
     
@@ -46,7 +46,7 @@ const DashBoard = ()=>{
             Don't want to register?
         </p>
         <p className="text-s w-[18vw]">
-            Attach the image/ video here to start Recognition process
+            Attach the image/video here to start Recognition process
         </p>
         
        </div>
