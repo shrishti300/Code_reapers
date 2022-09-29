@@ -7,12 +7,12 @@ const Register = ()=>{
 <Navbar />
     <div className="flex flex-col gap-8 align-middle place-items-center pt-4 justify-center ">
 <div>
-<p className="text-4xl text-blue-500 font-bold ">Welcome, New User</p>
+<p className="text-4xl text-sky-500 font-bold ">Welcome, New User</p>
 </div>
 <div>
-<div className="flex flex-col p-8 pb-16 bg-blue-100 border-2 border-gray-300">
+<div className="flex flex-col p-8 pb-16 bg-sky-100 border-2 border-gray-300">
 <div>
-    <p className="p-2 text-blue-400 font-bold">1. Personal Details</p>
+    <p className="p-2 text-sky-400 font-bold">1. Personal Details</p>
 </div>
 <div>
    <p className="p-2 font-bold"> Enter the details Below to register</p>

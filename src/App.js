@@ -1,8 +1,10 @@
 import React from "react";
-//import './App.css';
+import './App.css';
 import "tailwindcss/tailwind.css";
 import Register from "./Pages/Register.js";
 import FetchDetails from "./Pages/FetchDetails";
+import FetchDisplay from "./Pages/FetchDisplay";
+
 import {
   Routes,
   Route,
@@ -11,18 +13,20 @@ import {
 } from "react-router-dom";
 
 import DashBoard from "./Pages/DashBoard.js";
-
+import LocationDetails from "./Pages/LocationDetails.js";
+import PenaltiesDisplay from "./Pages/PenaltiesDisplay.js";
 const App=()=> {
   return (
     <Router>
     <Routes>
-     <Route
-            path="/dashboard" element={<DashBoard />} />
+          <Route path="/dashboard" element={<DashBoard />} />
           <Route path="/register" element={<Register />} />
-
-<Route path="/fetchdetails" element={<FetchDetails />} />
-            </Routes>
-            
+          <Route path="/fetchdisplay" element={<FetchDisplay />} />
+          <Route path="/fetchdetails" element={<FetchDetails />} />
+          <Route path="/penaltiesdisplay" element={<PenaltiesDisplay/>} />
+          <Route path="/locationDetails" element={<LocationDetails/>} />
+      </Routes>
+          
     </Router>
   );
 }

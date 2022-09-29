@@ -3,12 +3,13 @@ import Navbar from "../Components/Navbar";
 import Car from "../Assets/Car.png";
 import Ticket from "../Assets/Ticket.png";
 import Location from "../Assets/Location.png";
-import Img from "../Assets/Police officer with police car in town.png"
+import Img from "../Assets/carbg.png"
 const DashBoard = ()=>{
     return(
         <div>
         <Navbar/>
-        <div className="bg-gradient-to-t from-blue-400 to-blue-500 p-16 ">
+        {/* <img src={Img} className="absolute bottom-0 left-0 z--1"/> */}
+        <div className="bg-gradient-to-t from-sky-400 to-blue-700 p-16 imgContainer ">
        <div className="flex flex-col flex-justify justify-center">
 <div class="flex flex-justify justify-center">
 <p className="text-3xl font-bold text-white">License Plate </p>
@@ -20,23 +21,30 @@ const DashBoard = ()=>{
        </div>
        <div className="flex flex-justify justify-center">
         <p className="font-bold p-4"> Services we offer</p>
+        {/* <img src={Img} className></img> */}
        </div>
        <div className="flex flex-row justify-center gap-8">
-    
+            <a href="./FetchDetails">
             <div className=" flex flex-col justify-center items-center shadow-inner border-2 border-gray-300 rounded-lg w-[12vw] h-[24vh]">
             <img src={Car} className="w-[8vh] content-center"></img>
             
             <p className=" overflow-hidden flex-wrap text-l font-semibold">Fetch Vehicle details </p>
             </div>
+            </a>
+            <a href="./PenaltiesDisplay">
             <div className=" flex flex-col justify-center items-center shadow-inner border-2 border-gray-300 rounded-lg w-[12vw] h-[24vh]">
             <img src={Ticket} className="w-[8vh] content-center"></img>
             
-            <p className=" overflow-hidden flex-wrap text-l font-semibold">Fetch Vehicle details </p>
-            </div> <div className=" flex flex-col justify-center items-center shadow-inner border-2 border-gray-300 rounded-lg w-[12vw] h-[24vh]">
+            <p className=" overflow-hidden flex-wrap text-l font-semibold">Fines/Penalties </p>
+            </div>
+            </a>
+            <a href="./LocationDetails">
+            <div className=" flex flex-col justify-center items-center shadow-inner border-2 border-gray-300 rounded-lg w-[12vw] h-[24vh]">
             <img src={Location} className="w-[8vh] content-center"></img>
             
-            <p className=" overflow-hidden flex-wrap text-l font-semibold">Fetch Vehicle details </p>
+            <p className=" overflow-hidden flex-wrap text-l font-semibold">Location Details </p>
             </div>
+            </a>
             
        </div>
        <div className="flex flex-row gap-8 justify-center mt-8">
@@ -54,7 +62,6 @@ const DashBoard = ()=>{
      <input type="file" id="myfile" name="myfile" />
 </div>
        </div>
-       <img src={Img} className="absolute bottom-0 left-0"/>
         </div>
 
     );
