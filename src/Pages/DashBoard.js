@@ -11,10 +11,10 @@ const DashBoard = ()=>{
         <div className="bg-gradient-to-t from-blue-400 to-blue-500 p-16 ">
        <div className="flex flex-col flex-justify justify-center">
 <div class="flex flex-justify justify-center">
-<p className="text-2xl font-bold text-white">License Plate </p>
+<p className="text-3xl font-bold text-white">License Plate </p>
 </div>
 <div class="flex flex-justify justify-center">
-<p className="text-2xl font-bold text-white">Recognition Plate </p>
+<p className="text-3xl font-bold text-white">Recognition Portal </p>
 </div>
 </div>
        </div>
