@@ -1,11 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '../Components/Navbar';
 import Car from '../Assets/Car.png';
 import Ticket from '../Assets/Ticket.png';
 import Location from '../Assets/Location.png';
 import Img from '../Assets/carbg.png';
-
+import axios from "axios";
 const DashBoard = () => {
+
+ 
+    const [result,setResult]=useState('');
+    const handleupload = async() => {
+        try {
+            // Image Upload
+            const res=await axios.get('http://127.0.0.1:8000/xyz')
+            if(res){
+                // console.log(res);
+                setResult(res.data)
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
   return (
     <div>
       <Navbar />
@@ -77,8 +93,41 @@ const DashBoard = () => {
         </div>
         <div>
           <input type="file" id="myfile" name="myfile" />
+         
+          <button type="submit" onClick={handleupload} className="bg-blue-400 rounded-xl px-4">submit</button>
         </div>
-      </div>
+        
+        {result && (
+        <div className='absolute top-1/2 right-0'>
+          
+        <div className='bg-gradient-to-b from-sky-200 to-white border-2 rounded-xl bg-blue-100 p-2 px-6 mr-20 ease-in-out   '>
+            <p className='text-blue-600'>Owner's Name</p>
+            <p>Krishnamurthy Vamasi</p>
+            <p className='text-blue-400'>Date</p>
+            <p className='font-bold'>
+             {result.DATE}
+            </p>
+            <p className='text-blue-400'>Vehicle Number</p>
+            <p  className='font-bold pt-4'>
+            {result['Vehicle No.']}
+            </p>
+            <p className='text-blue-400'>Time</p>
+            <p  className='font-bold pt-4'>
+            {result['Time']}
+
+            </p>
+            <p className='text-blue-400'>State</p>
+            <p  className='font-bold pt-4'>
+            {result['State']}
+            </p>
+            <p className='text-blue-400'>Location</p>
+            <p  className='font-bold pt-4 text-wrap w-[10vw]'>"
+            {result['Location']} "
+            </p>
+        </div>
+        </div>
+        )}
+       </div>
     </div>
   );
 };

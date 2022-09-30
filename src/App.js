@@ -15,6 +15,7 @@ import {
 import DashBoard from "./Pages/DashBoard.js";
 import LocationDetails from "./Pages/LocationDetails.js";
 import PenaltiesDisplay from "./Pages/PenaltiesDisplay.js";
+import ChooseDisplay from "./Pages/ChooseDisplay.js";
 const App=()=> {
   return (
     <Router>
@@ -23,6 +24,7 @@ const App=()=> {
           <Route path="/register" element={<Register />} />
           <Route path="/fetchdisplay" element={<FetchDisplay />} />
           <Route path="/fetchdetails" element={<FetchDetails />} />
+          <Route path="/choosedisplay" element={<ChooseDisplay />} />
           <Route path="/penaltiesdisplay" element={<PenaltiesDisplay/>} />
           <Route path="/locationDetails" element={<LocationDetails/>} />
       </Routes>
