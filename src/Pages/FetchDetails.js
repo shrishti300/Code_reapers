@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import ImageBG from "../Assets/Group 1.png"
+import Scan from "../Assets/scan_icon.png"
+import Voice from "../Assets/voice_icon.png"
 const FetchDetails = () => {
     return (
         <>
@@ -8,9 +10,9 @@ const FetchDetails = () => {
       <Navbar />
       
       <form>
-      <div className="flex flex-row justify-center items-center gap-6">
-        <div className=" w-1/2 flex flex-col">
-          <div className="mb-8">
+      <div className="flex flex-row justify-center items-center gap-6 customFont">
+        <div className=" w-1/2 flex flex-col customFont">
+          <div className="mb-8 mt-14">
             <p className="text-xl font-bold  my-4">You Selected</p>
             <p className="text-3xl font-bold">Fetch Vehicle Details</p>
           </div>
@@ -20,22 +22,34 @@ const FetchDetails = () => {
    
             <p className="mt-4 text-cyan-800 font-semibold">OR</p>
           </div>
-          <div>
-            <button
+          <div className="flex flex-row gap-6">
+            <button 
               type="button"
-              className="bg-cyan-400 px-4 py-2 rounded-lg mr-4"
+              className="flex flex-row items-center justify-center bg-sky-400 px-4 py-2 rounded-xl mr-4"
             >
+                <img src={Scan} className="pr-2"></img>
               <p className="text-white font-semibold">Upload</p>
             </button>
             <button
               type="button"
-              className="bg-cyan-400 px-6 py-2 rounded-lg ml-4"
+              className="flex flex-row items-center justify-center bg-sky-400 px-6 py-2 rounded-xl ml-4"
             >
+                <img src={Voice} className="pr-2"></img>
               <p className="text-white font-semibold">Voice</p>
             </button>
           </div>
+            <div>
+            <a href="./FetchDisplay">
+            <button
+                type="button"
+                className=" bg-sky-700 mt-24 px-4 py-2 rounded-lg mr-4 drop-shadow-md"
+            >   
+                <p className="text-white font-semibold">Proceed</p>
+            </button>
+            </a>
+            </div>
         </div>
-        <div className=" flex flex-col justify-center   ">
+        <div className=" flex flex-col justify-center customFont ">
  
         <div>
             <p className="font-bold text-2xl pt-16">Current Prices</p>
@@ -58,7 +72,7 @@ const FetchDetails = () => {
 
         </div>
         </form> 
-        <img src={ImageBG} className="absolute top-0 right-0 mt-20"/>
+        <img src={ImageBG} className="absolute top-0 right-0 mt-20 -z-10"/>
       </div>
       </>
     );

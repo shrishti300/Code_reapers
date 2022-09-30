@@ -6,9 +6,9 @@ const LocationDisplay= () => {
         <>
       <div>
       <Navbar />
-      <img src={ImageBG} className="absolute top-0 right-0 mt-20"/>
+      <img src={ImageBG} className="absolute top-0 right-0 mt-20 -z-10"/>
       <form>
-      <div className="flex flex-row justify-center items-center gap-6">
+      <div className="flex flex-row justify-center items-center gap-6 mt-10 customFont">
         <div className=" w-1/2 flex flex-col">
           <div className="mb-8">
             <p className="text-xl font-bold  my-4">You Selected</p>
@@ -16,8 +16,14 @@ const LocationDisplay= () => {
           </div>
          
           <div>
-           <p className="text-blue-400">03/393 Kattankulathur, Guduvanchey 308002, Chennai</p>
+           <p className="text-sky-400">03/393 Kattankulathur, Guduvanchey 308002, Chennai</p>
           </div>
+          <a href="./DashBoard">
+          <button type="button"
+                className="bg-sky-700 mt-24 px-4 py-2 rounded-lg mr-4 drop-shadow-md" > 
+                <p className="text-white font-semibold">Back</p>
+            </button>
+          </a>
         </div>
         <div className=" flex flex-col justify-center   ">
  
@@ -42,6 +48,7 @@ const LocationDisplay= () => {
 
         </div>
         </form>
+
       </div>
       </>
     );

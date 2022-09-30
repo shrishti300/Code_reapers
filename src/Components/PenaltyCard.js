@@ -4,7 +4,7 @@ const Penalitycard = () =>
    return (
         <>
  
- <div className="border-gray-200 border-2 rounded-xl mt-2 shadow-l p-4 w-[22vw]">
+ <div className="bg-white border-gray-200 border-2 rounded-xl mt-2 drop-shadow-md p-4 max-w-">
              <div className="flex flex-row gap-32 mb-4 ">
                  <div className="flex flex-col">
                  <p className="text-blue-500 text-xs">Source</p>
