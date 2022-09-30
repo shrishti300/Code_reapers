@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< Updated upstream
 import './App.css';
 import "tailwindcss/tailwind.css";
 <<<<<<< Updated upstream
@@ -11,6 +12,10 @@ import FetchDetails from "./Pages/FetchDetails";
 import FetchDisplay from "./Pages/FetchDisplay";
 
 >>>>>>> e795428c70da02083be8470092c269d5c77cc7f7
+=======
+//import './App.css';
+import "tailwindcss/tailwind.css";
+>>>>>>> Stashed changes
 import {
   Routes,
   Route,
@@ -19,12 +24,17 @@ import {
 } from "react-router-dom";
 
 import DashBoard from "./Pages/DashBoard.js";
+<<<<<<< Updated upstream
 import LocationDetails from "./Pages/LocationDetails.js";
 import PenaltiesDisplay from "./Pages/PenaltiesDisplay.js";
+=======
+
+>>>>>>> Stashed changes
 const App=()=> {
   return (
     <Router>
     <Routes>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
      <Route
             path="/dashboard" element={<DashBoard />} />
@@ -47,6 +57,13 @@ const App=()=> {
       </Routes>
           
 >>>>>>> e795428c70da02083be8470092c269d5c77cc7f7
+=======
+     <Route
+            path="/dashboard" element={<DashBoard />} />
+         
+            </Routes>
+            
+>>>>>>> Stashed changes
     </Router>
   );
 }

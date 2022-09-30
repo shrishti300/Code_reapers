@@ -10,6 +10,10 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    "react-routes": "^0.2.6",
+>>>>>>> Stashed changes
 =======
     "react-routes": "^0.2.6",
 >>>>>>> Stashed changes
