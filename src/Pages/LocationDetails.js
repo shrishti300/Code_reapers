@@ -1,38 +1,22 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import ImageBG from "../Assets/Group 1.png"
-const FetchDetails = () => {
+const LocationDisplay= () => {
     return (
         <>
       <div>
       <Navbar />
-      
+      <img src={ImageBG} className="absolute top-0 right-0 mt-20"/>
       <form>
       <div className="flex flex-row justify-center items-center gap-6">
         <div className=" w-1/2 flex flex-col">
           <div className="mb-8">
             <p className="text-xl font-bold  my-4">You Selected</p>
-            <p className="text-3xl font-bold">Fetch Vehicle Details</p>
+            <p className="text-3xl font-bold">Location Details</p>
           </div>
-          <div className="py-4">
-            <p className="text-xl mb-2">Enter the license plate number</p>
-       <input type="text" id="fname" placeholder="AB 12 CD 3456"name="fname" className="bg-sky-100 border-2 rounded-lg w-[24vw] pl-4"/>
-   
-            <p className="mt-4 text-cyan-800 font-semibold">OR</p>
-          </div>
+         
           <div>
-            <button
-              type="button"
-              className="bg-cyan-400 px-4 py-2 rounded-lg mr-4"
-            >
-              <p className="text-white font-semibold">Upload</p>
-            </button>
-            <button
-              type="button"
-              className="bg-cyan-400 px-6 py-2 rounded-lg ml-4"
-            >
-              <p className="text-white font-semibold">Voice</p>
-            </button>
+           <p className="text-blue-400">03/393 Kattankulathur, Guduvanchey 308002, Chennai</p>
           </div>
         </div>
         <div className=" flex flex-col justify-center   ">
@@ -57,11 +41,10 @@ const FetchDetails = () => {
 
 
         </div>
-        </form> 
-        <img src={ImageBG} className="absolute top-0 right-0 mt-20"/>
+        </form>
       </div>
       </>
     );
   };
   
-  export default FetchDetails;
+  export default LocationDisplay;

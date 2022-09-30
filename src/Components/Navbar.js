@@ -3,33 +3,33 @@ import React from "react";
 const Navbar = ()=>{
     return(
         <>
-            <div className="flex justify-between h-[10vh] pt-2 item-center border-b-4 border-gray-300">
+            <div className="flex justify-between h-[10vh] item-center">
                 <div>
                     <a href="/dashboard" className="no-underline">
                     <div>
-                        <p className="text-blue-600 font-extrabold pl-4 text-lg ">CAMIO</p>
+                        <p className="text-sky-600 font-extrabold pt-4 1/2 pl-4 text-lg drop-shadow-md  shadow-black-100 ">CAMIO</p>
                         </div>
                     </a>
                 </div>
                 <div className="flex justify-end pr-8 ">
                  <div className="pl-4">
-                 <a href="">
-                    <p className="text-xs pt-2 text-blue-500">Home</p>
+                 <a href="./DashBoard">
+                    <p className="text-s font-semibold pt-4 1/2 text-sky-500">Home</p>
                     </a>
                  </div>
-                 <div className="pl-4">
+                 <div className="pl-6">
                  <a href="">
-                    <p className="text-xs pt-2 text-blue-500">Analytics</p>
+                    <p className="text-s font-semibold pt-4 1/2 text-sky-500">Analytics</p>
                     </a>
                  </div>
-                 <div className="pl-4">
-                 <a href="">
-                    <p className="text-xs pt-2 text-blue-500">My profile</p>
+                 <div className="pl-6">
+                 <a href="./FetchDisplay">
+                    <p className="text-s font-semibold pt-4 1/2 text-sky-500">My profile</p>
                     </a>
                  </div>
-                 <div className="pl-4">
-                 <a href="">
-                    <p className="text-xs pt-2 text-blue-500 ">Login/Register</p>
+                 <div className="pl-6">
+                 <a href="./Register">
+                    <p className="text-s font-bold pt-4 1/2 text-sky-500 ">Login/Register</p>
                     </a>
                  </div>
                  
