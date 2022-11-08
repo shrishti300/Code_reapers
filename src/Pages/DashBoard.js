@@ -93,8 +93,9 @@ const DashBoard = () => {
         </div>
         <div>
           <input type="file" id="myfile" name="myfile" />
-         
+         <a href="/FetchDisplay">
           <button type="submit" onClick={handleupload} className="bg-blue-400 rounded-xl px-4">submit</button>
+          </a>
         </div>
         
         {result && (
